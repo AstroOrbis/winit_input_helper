@@ -114,7 +114,7 @@ impl WinitInputHelper {
         }
     }
 
-    fn process_window_event(&mut self, event: &WindowEvent) {
+    pub fn process_window_event(&mut self, event: &WindowEvent) {
         match event {
             WindowEvent::CloseRequested => self.close_requested = true,
             WindowEvent::Destroyed => self.destroyed = true,
